@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>530aca88-ea65-4d1b-9a8a-ed92b1db694d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Day2.py</StartupFile>
+    <StartupFile>Day4_tests.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,10 +26,19 @@
     <Compile Include="Day2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Day3.py" />
+    <Compile Include="Day3_tests.py" />
+    <Compile Include="Day4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day4_tests.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day1.txt" />
     <Content Include="Day2_input.txt" />
+    <Content Include="Day3.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
