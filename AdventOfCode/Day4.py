@@ -1,4 +1,5 @@
 import hashlib
+import timeit
 
 def lowest_salt_with_leading_zeroes(secret_key, num_zeroes=5):
     leading_zeroes = "0" * num_zeroes
@@ -14,5 +15,7 @@ def lowest_salt_with_leading_zeroes(secret_key, num_zeroes=5):
     return salt
 
 if __name__ == "__main__":
-    print("5 zeroes: %d" % (lowest_salt_with_leading_zeroes("yzbqklnj"),))
-    print("6 zeroes: %d" % (lowest_salt_with_leading_zeroes("yzbqklnj", 6),))
+    t1 = timeit.timeit("""print("5 zeroes: %d" % (lowest_salt_with_leading_zeroes("yzbqklnj"),))""", setup="from __main__ import lowest_salt_with_leading_zeroes", number=1)
+    print("(%.3fs)" % (t1,))
+    t2 = timeit.timeit("""print("6 zeroes: %d" % (lowest_salt_with_leading_zeroes("yzbqklnj", 6),))""", setup="from __main__ import lowest_salt_with_leading_zeroes", number=1)
+    print("(%.3fs)" % (t2,))
