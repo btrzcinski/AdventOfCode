@@ -50,6 +50,12 @@
     <Compile Include="Day7.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Day8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day8_tests.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day1.txt" />
@@ -58,6 +64,7 @@
     <Content Include="Day5.txt" />
     <Content Include="Day6.txt" />
     <Content Include="Day7.txt" />
+    <Content Include="Day8.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
