@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>530aca88-ea65-4d1b-9a8a-ed92b1db694d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Day9_tests.py</StartupFile>
+    <StartupFile>Day10_tests.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Day1.py" />
+    <Compile Include="Day10.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day10_tests.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Day2.py">
       <SubType>Code</SubType>
     </Compile>

@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "Day4Console.h"
+#include "Day10Console.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,6 +20,9 @@ int main(int argc, char *argv[])
     {
     case 4:
         Day4Console();
+        break;
+    case 10:
+        Day10Console();
         break;
     default:
         std::cout << "Day " << day << " not implemented" << std::endl;
