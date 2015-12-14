@@ -47,6 +47,12 @@
     <Compile Include="Day13_tests.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Day14.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day14_tests.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Day2.py">
       <SubType>Code</SubType>
     </Compile>
@@ -91,6 +97,7 @@
     <Content Include="Day1.txt" />
     <Content Include="Day12.txt" />
     <Content Include="Day13.txt" />
+    <Content Include="Day14.txt" />
     <Content Include="Day2_input.txt" />
     <Content Include="Day3.txt" />
     <Content Include="Day5.txt" />
