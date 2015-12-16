@@ -1,9 +1,7 @@
 from collections import defaultdict
 
 def new_aunt_map():
-	def new_none_defaultdict():
-		return defaultdict(lambda: None)
-	return defaultdict(new_none_defaultdict)
+	return defaultdict(lambda: defaultdict(lambda: None))
 
 def get_aunt_map_from_file(filename):
 	aunt_map = new_aunt_map()
