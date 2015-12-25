@@ -1,7 +1,6 @@
 from collections import defaultdict
 from difflib import SequenceMatcher
 from operator import itemgetter
-from time import sleep
 
 def replacements_for_molecule(molecule, before, after):
     index = molecule.find(before)
@@ -16,7 +15,19 @@ def generated_molecules_from_molecule(molecule, replacement_map):
                 yield replacement_molecule
 
 def steps_to_get_molecule(target_molecule, replacement_map):
-    return 0
+    inverse_replacement_map = {}
+    for k, v in replacement_map.items():
+        for val in v:
+            inverse_replacement_map[val] = (k,)
+
+    # try to work backwards from the molecule to "e", using greedy search
+    work = [(0, target_molecule)]
+    while work[0][1] != "e":
+        steps, molecule = work.pop(0)
+        for replacement in generated_molecules_from_molecule(molecule, inverse_replacement_map):
+            work.append((steps+1, replacement))
+        work.sort(key=itemgetter(0), reverse=True)
+    return work[0][0]
 
 def main():
     replacement_map = defaultdict(list)
