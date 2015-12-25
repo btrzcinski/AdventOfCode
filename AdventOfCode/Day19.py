@@ -1,5 +1,4 @@
 from collections import defaultdict
-from difflib import SequenceMatcher
 from operator import itemgetter
 
 def replacements_for_molecule(molecule, before, after):
