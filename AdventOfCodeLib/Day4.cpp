@@ -31,7 +31,7 @@ namespace
         }
 
         CryptDestroyHash(hHash);
-        return leadingHexZeroes == num_hex_zeroes;
+        return leadingHexZeroes >= num_hex_zeroes;
     }
 }
 
