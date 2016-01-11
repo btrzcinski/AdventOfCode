@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __DAY10_CONSOLE_H
+#define __DAY10_CONSOLE_H
 
 #include <iostream>
 
@@ -17,3 +18,6 @@ void Day10Console()
         });
     }
 }
+
+#endif // __DAY10_CONSOLE_H
+

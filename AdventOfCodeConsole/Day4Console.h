@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __DAY4_CONSOLE_H
+#define __DAY4_CONSOLE_H
 
 #include <iostream>
 
@@ -19,3 +20,6 @@ void Day4Console()
         std::cout << Day4::lowest_salt_with_leading_zeroes(secret_key, 6) << std::endl;
     });
 }
+
+#endif // __DAY4_CONSOLE_H
+

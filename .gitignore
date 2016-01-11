@@ -259,3 +259,13 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+*.cmake
+
+# UNIX build outputs
+*.a
+
